@@ -1,0 +1,25 @@
+// https://leetcode.com/problems/two-sum/description/
+
+
+#include<bits/stdc++.h>  
+using namespace std;
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        map<int,int>mp;
+    for(int i=0;i<nums.size();i++)
+    {
+        int diff=target-nums[i];
+        if(mp.count(diff))
+            return { i , mp[ diff ] };
+        mp[nums[i]]=i;
+    }
+    return {};
+    }
+    
+};
+
+int main() {   
+    
+    return 0;
+}
