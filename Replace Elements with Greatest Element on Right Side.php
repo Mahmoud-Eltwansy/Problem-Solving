@@ -1,5 +1,8 @@
 <?php
 
+// https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
+
+// This is an O(n) solution in PHP
 function replaceElements($arr)
 {
 
